@@ -1,0 +1,26 @@
+@font-face {
+	font-family: ALS-Hauss;
+	src: url("../assets/fonts/ALSHauss-Regular.ttf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: ALS-Hauss !important;
+	button {
+		font-size: 14px;
+	}
+}
+
+body {
+	background: #fff;
+}
+
+input {
+	outline: none !important;
+}

@@ -1,0 +1,21 @@
+li {
+	font-size: 13px;
+	font-weight: 600;
+	cursor: pointer;
+	border: 1px solid transparent;
+	padding-bottom: 5px;
+	&:hover {
+		color: #ffbe1f;
+		border-bottom: 1px solid #ffbe1f;
+		transition: all 0.3s ease-in-out;
+	}
+}
+
+input {
+	outline: none !important;
+}
+
+h6 {
+	font-size: 14px;
+	color: grey;
+}
