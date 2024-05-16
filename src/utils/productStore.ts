@@ -18,9 +18,11 @@ const fetchProductsFordiscount = async (set: any) => {
 	}
 };
 
-const productStore = (set: any) => ({
+
+const productStore = (set: any, id: any) => ({
 	loading: false,
 	products: [],
+	singleProduct: [],
 	error: null,
 	fetchProductsFordiscount: () => fetchProductsFordiscount(set),
 });

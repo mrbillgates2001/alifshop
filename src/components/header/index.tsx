@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import { IoCloseSharp, IoMenu, IoCartOutline } from "react-icons/io5";
 import { FaSearch } from "react-icons/fa";
 import { Button } from "react-bootstrap";
+import Link from "next/link";
+import { CiHeart } from "react-icons/ci";
 
 const Header = () => {
 	const [open, setOpen] = useState(false);
@@ -26,7 +28,7 @@ const Header = () => {
 			<div className="container max-w-[1340px] mx-auto py-2 px-5 ">
 				<div>
 					<nav className="flex items-center justify-between px-2">
-						<div className="logo flex items-center">
+						<Link href="/" className="logo flex items-center">
 							<svg
 								width="48"
 								height="48"
@@ -44,7 +46,7 @@ const Header = () => {
 								/>
 							</svg>
 							<strong>alif </strong> <span> shop</span>
-						</div>
+						</Link>
 						<div>
 							<button
 								onClick={openMenu}
@@ -92,14 +94,18 @@ const Header = () => {
 								<FaSearch />
 							</button>
 						</form>
-						<div className="flex flex-col items-center hover:text-[#FFBE1F] hover:cursor-pointer hover:transition-all transition-3">
+						<Link
+							href="/uz/cart"
+							className="flex flex-col items-center hover:text-[#FFBE1F] hover:cursor-pointer hover:transition-all transition-3">
 							<IoCartOutline />
 							<p className="text-[14px]">Savat</p>
-						</div>
-						<div className="flex flex-col items-center hover:text-[#FFBE1F] hover:cursor-pointer hover:transition-all transition-3">
-							<IoCartOutline />
+						</Link>
+						<Link
+							href="/uz/favorites"
+							className="flex flex-col items-center hover:text-[#FFBE1F] hover:cursor-pointer hover:transition-all transition-3">
+							<CiHeart />
 							<p className="text-[14px]">Saralanganlar</p>
-						</div>
+						</Link>
 						<div>
 							<Button
 								variant="outline"
