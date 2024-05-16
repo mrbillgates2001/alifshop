@@ -22,14 +22,6 @@ type Product = {
 	images: string[];
 };
 
-// interface Product {
-// 	id: string;
-// 	title: string;
-// 	thumbnail: string;
-// 	price: number;
-// 	discountPercentage: number;
-// }
-
 const ProductDetails = (params: {
 	params: {
 		id: string;
